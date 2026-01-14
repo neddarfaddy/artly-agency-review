@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARTLY AGENCY</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/metaa.jpg">
+    <meta property="og:url" content="index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- ✅ single correct jQuery (NO duplicates below) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="apple-touch-icon" href="img/logo.svg">
+
+    <!-- (kept as-is from your file) -->
+    <style type="text/css">
+        @media (max-width: 600px) {
+            body {
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+
+<span class="mousepointer" style="z-index: 999999; opacity: 1;"></span>
+
+<!-- Mobile Header -->
+<header class="nav-down responsive-nav hidden-lg hidden-md">
+    <div class="logom" id="logom">
+        <a href="portfolio.html"><h1 id="ranm">ARTLY AGENCY</h1></a>
+    </div>
+
+    <!-- ✅ removed bootstrap collapse attrs; controlled via class toggle -->
+    <button type="button" id="nav-toggle" class="navbar-toggle" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span id="bar1" class="icon-bar"></span>
+        <span id="bar2" class="icon-bar"></span>
+        <span id="bar3" class="icon-bar"></span>
+    </button>
+
+    <!-- ✅ removed collapse classes (CSS already targets #main-nav ul) -->
+    <div id="main-nav" class="main-nav">
+        <nav>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" class="inactive">HOME</a></li>
+                <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                <li><a href="business-brand-portfolio.html" class="inactive">BUSINESS &amp; BRANDS</a></li>
+                <li><a href="weddings-portfolio.html" class="inactive">WEDDINGS</a></li>
+                <li><a href="contact.html" class="inactive">CONTACT</a></li>
+
+                <!-- ✅ fixed missing </li> -->
+                <li class="submenu">
+                    <a href="#" onclick='window.open("https://www.instagram.com/artly_agency/?hl=en");return false;' style="font-size: 200%;">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Desktop Sidebar -->
+<div class="sidebar-navigation hidde-sm hidden-xs">
+    <ul class="social-icons" style="top: 3%; position: absolute; width: 300%; right: -250%;">
+        <li class="backhome">
+            <a href="index.html">Home </a><span>&gt;</span>
+            <a href="portfolio.html"> Portfolio </a><span>&gt;</span>
+            <a href="weddings-portfolio.html"> Weddings</a><span>&gt;</span>
+            <a href="portfolio.html"> Pre-Wedding </a>
+        </li>
+    </ul>
+
+    <ul class="social-icons">
+        <li>
+            <a href="#" onclick='window.open("https://www.instagram.com/artly_agency/?hl=en");return false;' style="font-size: 200%;">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Gallery -->
+<div style="width: 100%; height: 100%; position: absolute;" id="scrolll">
+    <div class="photography" id="scroll" oncontextmenu="return false;">
+        <img srcset="img/permob/1.jpg 600w, img/perwebl/businessandbrand.jpg">
+        <img srcset="img/permob/2.jpg 600w, img/perwebl/wedding.webp">
+        <img srcset="img/permob/3.jpg 600w, img/perwebl/businessandbrand.jpg">
+        <img srcset="img/permob/4.jpg 600w, img/perwebl/wedding.webp">
+        <img srcset="img/permob/5.jpg 600w, img/perwebl/businessandbrand.jpg">
+        <img srcset="img/permob/6.jpg 600w, img/perwebl/wedding.webp" loading="lazy">
+        <img srcset="img/permob/7.webp 600w, img/perwebl/businessandbrand.jpg">
+        <img srcset="img/permob/2.jpg 600w, img/perwebl/wedding.webp" loading="lazy">
+        <img srcset="img/permob/4.jpg 600w, img/perwebl/businessandbrand.jpg">
+        <img srcset="img/permob/2.jpg 600w, img/perwebl/new3.jpg" loading="lazy">
+        <img srcset="img/permob/8.webp 600w, img/perwebl/neew3.jpg" loading="lazy">
+        <img srcset="img/permob/5.jpg 600w, img/perwebl/5.jpg" loading="lazy">
+        <img srcset="img/permob/neew25.jpg 600w, img/perwebl/neew25.jpg" loading="lazy">
+        <img srcset="img/permob/new1.jpg 600w, img/perwebl/new1.jpg" loading="lazy">
+        <img srcset="img/permob/neew4.jpg 600w, img/perwebl/neew4.jpg" loading="lazy">
+        <img srcset="img/permob/6.jpg 600w, img/perwebl/6.jpg" loading="lazy">
+        <img srcset="img/permob/neew23.jpg 600w, img/perwebl/neew23.jpg" loading="lazy">
+        <img srcset="img/permob/new9.jpg 600w, img/perwebl/new9.jpg" loading="lazy">
+        <img srcset="img/permob/neew5.jpg 600w, img/perwebl/neew5.jpg" loading="lazy">
+        <img srcset="img/permob/7.jpg 600w, img/perwebl/7.jpg" loading="lazy">
+        <img srcset="img/permob/neew22.jpg 600w, img/perwebl/neew22.jpg" loading="lazy">
+        <img srcset="img/permob/8.jpg 600w, img/perwebl/8.jpg" loading="lazy">
+        <img srcset="img/permob/neew6.jpg 600w, img/perwebl/neew6.jpg" loading="lazy">
+        <img srcset="img/permob/9.jpg 600w, img/perwebl/9.jpg" loading="lazy">
+        <img srcset="img/permob/neew21.jpg 600w, img/perwebl/neew21.jpg" loading="lazy">
+        <img srcset="img/permob/10.jpg 600w, img/perwebl/10.jpg" loading="lazy">
+        <img srcset="img/permob/neew7.jpg 600w, img/perwebl/neew7.jpg" loading="lazy">
+        <img srcset="img/permob/new5.jpg 600w, img/perwebl/new5.jpg" loading="lazy">
+        <img srcset="img/permob/neew20.jpg 600w, img/perwebl/neew20.jpg" loading="lazy">
+        <img srcset="img/permob/11.jpg 600w, img/perwebl/11.jpg" loading="lazy">
+        <img srcset="img/permob/neew8.jpg 600w, img/perwebl/neew8.jpg" loading="lazy">
+        <img srcset="img/permob/12.jpg 600w, img/perwebl/12.jpg" loading="lazy">
+        <img srcset="img/permob/neew19.jpg 600w, img/perwebl/neew19.jpg" loading="lazy">
+        <img srcset="img/permob/new2.jpg 600w, img/perwebl/new2.jpg" loading="lazy">
+        <img srcset="img/permob/neew9.jpg 600w, img/perwebl/neew9.jpg" loading="lazy">
+        <img srcset="img/permob/13.jpg 600w, img/perwebl/13.jpg" loading="lazy">
+        <img srcset="img/permob/neew18.jpg 600w, img/perwebl/neew18.jpg" loading="lazy">
+        <img srcset="img/permob/new8.jpg 600w, img/perwebl/new8.jpg" loading="lazy">
+        <img srcset="img/permob/neew10.jpg 600w, img/perwebl/neew10.jpg" loading="lazy">
+        <img srcset="img/permob/14.jpg 600w, img/perwebl/14.jpg" loading="lazy">
+        <img srcset="img/permob/neew17.jpg 600w, img/perwebl/neew17.jpg" loading="lazy">
+        <img srcset="img/permob/15.jpg 600w, img/perwebl/15.jpg" loading="lazy">
+        <img srcset="img/permob/neew11.jpg 600w, img/perwebl/neew11.jpg" loading="lazy">
+        <img srcset="img/permob/16.jpg 600w, img/perwebl/16.jpg" loading="lazy">
+        <img srcset="img/permob/neew16.jpg 600w, img/perwebl/neew16.jpg" loading="lazy">
+        <img srcset="img/permob/17.jpg 600w, img/perwebl/17.jpg" loading="lazy">
+        <img srcset="img/permob/neew12.jpg 600w, img/perwebl/neew12.jpg" loading="lazy">
+        <img srcset="img/permob/18.jpg 600w, img/perwebl/18.jpg" loading="lazy">
+        <img srcset="img/permob/neew15.jpg 600w, img/perwebl/neew15.jpg" loading="lazy">
+        <img srcset="img/permob/new4.jpg 600w, img/perwebl/new4.jpg" loading="lazy">
+        <img srcset="img/permob/neew13.jpg 600w, img/perwebl/neew13.jpg" loading="lazy">
+        <img srcset="img/permob/19.jpg 600w, img/perwebl/19.jpg" loading="lazy">
+        <img srcset="img/permob/neew14.jpg 600w, img/perwebl/neew14.jpg" loading="lazy">
+        <img srcset="img/permob/20.jpg 600w, img/perwebl/20.jpg" loading="lazy">
+        <img srcset="img/permob/21.jpg 600w, img/perwebl/21.jpg" loading="lazy">
+        <img srcset="img/permob/22.jpg 600w, img/perwebl/22.jpg" loading="lazy">
+        <img srcset="img/permob/neew24.jpg 600w, img/perwebl/neew24.jpg" loading="lazy">
+        <img srcset="img/permob/23.jpg 600w, img/perwebl/23.jpg" loading="lazy">
+        <img srcset="img/permob/24.jpg 600w, img/perwebl/24.jpg" loading="lazy">
+        <img srcset="img/permob/new7.jpg 600w, img/perwebl/new7.jpg" loading="lazy">
+        <img srcset="img/permob/25.jpg 600w, img/perwebl/25.jpg" loading="lazy">
+        <img srcset="img/permob/26.jpg 600w, img/perwebl/26.jpg" loading="lazy">
+        <img srcset="img/permob/27.jpg 600w, img/perwebl/27.jpg" loading="lazy">
+        <img srcset="img/permob/28.jpg 600w, img/perwebl/28.jpg" loading="lazy">
+        <img srcset="img/permob/29.jpg 600w, img/perwebl/29.jpg" loading="lazy">
+        <img srcset="img/permob/30.jpg 600w, img/perwebl/30.jpg" loading="lazy">
+        <img srcset="img/permob/31.jpg 600w, img/perwebl/31.jpg" loading="lazy">
+    </div>
+
+    <div class="scrolu" style="background-color: black;"></div>
+</div>
+
+<!-- Keep your GSAP libs if you actually use them; they don't affect the mobile menu -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
+
+<script type="text/javascript">
+    // Drag-to-scroll (mouse)
+    const slider = document.querySelector('#scroll');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.style.webkitTouchCallout = 'none';
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => { isDown = false; });
+    slider.addEventListener('mouseup', () => { isDown = false; });
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // ✅ Drag-to-scroll (touch) - helps mobile UX
+    slider.addEventListener('touchstart', (e) => {
+        isDown = true;
+        startX = e.touches[0].pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    }, { passive: true });
+
+    slider.addEventListener('touchend', () => { isDown = false; }, { passive: true });
+    slider.addEventListener('touchcancel', () => { isDown = false; }, { passive: true });
+
+    slider.addEventListener('touchmove', (e) => {
+        if (!isDown) return;
+        const x = e.touches[0].pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+    }, { passive: true });
+
+    // Instagram/Facebook in-app browser stylesheet
+    if (/instagram|FB/i.test(navigator.userAgent)) {
+        var head = document.querySelector('head');
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'css/insta.css';
+        head.appendChild(link);
+    }
+
+    // ✅ Mobile menu toggle (same fix as your other working pages)
+    $('#nav-toggle').on('click', function (e) {
+        e.preventDefault();
+
+        $('#main-nav').toggleClass('is-open');
+        $(this).toggleClass('open');
+
+        var isOpen = $('#main-nav').hasClass('is-open');
+        $(this).attr('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close menu when clicking a link
+    $('#main-nav a').on('click', function () {
+        $('#main-nav').removeClass('is-open');
+        $('#nav-toggle').removeClass('open').attr('aria-expanded', 'false');
+    });
+
+    // Close on ESC
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') {
+            $('#main-nav').removeClass('is-open');
+            $('#nav-toggle').removeClass('open').attr('aria-expanded', 'false');
+        }
+    });
+</script>
+
+<script src="js/min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

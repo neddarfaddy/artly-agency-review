@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARTLY AGENCY</title>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/metaa.jpg">
+    <meta property="og:url" content="index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&amp;display=swap" rel="stylesheet">
+
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="apple-touch-icon" href="img/logo.svg">
+    </head>
+
+<body id="body">
+    <span class="mousepointer" style="z-index: 999999; opacity: 1;"></span>
+
+
+<div class="cover">
+            <div class="sublogo">
+                <div><a href="portfolio.html">PORTFOLIO</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+</div>
+
+<div class="outer-wrapper">
+  <div class="s-wrap s-type-1" role="slider">
+    <ul class="s-content">
+      <li class="s-item s-item-1"></li>
+      <li class="s-item s-item-2"></li>
+      <li class="s-item s-item-3"></li>
+      <li class="s-item s-item-4"></li>
+      <li class="s-item s-item-5"></li>
+      <li class="s-item s-item-6"></li>
+    </ul>
+  </div>
+</div>
+
+    <script type="text/javascript">
+        "use strict";
+
+        var body = document.getElementsByTagName("body");
+        var mousepointer = document.querySelector('.mousepointer');
+        mousepointer.style.transform = "scale(0.1)";
+        var link = document.getElementsByTagName("a");
+        window.addEventListener('mousemove', mouseMoveHandler);
+        window.addEventListener('mousedown', mouseDownHandler);
+        window.addEventListener('mouseup', mouseUpHandler);
+        var length = link.length;
+        for (var i = 0; i < length; i++) {
+            link[i].addEventListener('mouseenter', linkEnterHandler);
+            link[i].addEventListener('mouseleave', linkLeaveHandler);
+            link[i].addEventListener("click", (function(e) {
+                body[0].style.opacity = 0;
+                e.preventDefault();
+                setTimeout(function(url) { window.location = url }, 150, this.href);
+                }));
+        }
+
+        function mouseMoveHandler(e) {
+        mousepointer.style.left = e.clientX - mousepointer.offsetWidth / 2 + "px";
+        mousepointer.style.top = e.clientY - mousepointer.offsetHeight / 2 + "px";
+        mousepointer.style.opacity = 1;
+        }
+
+        function mouseUpHandler(e) {
+        mousepointer.style.transform = "scale(0.1)";
+
+        if (e.target.classList.contains('link')) {
+            mousepointer.style.transform = 'scale(1)';
+            mousepointer.style.opacity = 1;
+        }
+        }
+
+        function mouseDownHandler() {
+            mousepointer.style.transform = "scale(0.7)";
+        }
+
+        function linkEnterHandler() {
+            mousepointer.style.transform = "scale(1)";
+        }
+
+        function linkLeaveHandler() {
+            mousepointer.style.transform = "scale(0.1)";
+        }
+
+
+    </script>
+    
+
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.html"><\/script>')</script>
+
+    <script src="js/min.js"></script>
+
+
+
+</body>
+
+</html>

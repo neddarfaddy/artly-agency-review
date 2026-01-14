@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ARTLY AGENCY — Contact</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/metaa.jpg" />
+    <meta property="og:url" content="contact.html" />
+
+    <link rel="icon" type="image/x-icon" href="img/logo.svg" />
+    <link rel="apple-touch-icon" href="img/logo.svg" />
+
+    <link rel="stylesheet" href="css/min.css" />
+    <link rel="stylesheet" href="css/fontAwesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- One jQuery فقط (لا تكرر) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+
+<!-- Custom cursor element (desktop only via your CSS media query) -->
+<span class="mousepointer" style="z-index: 999999; opacity: 1;"></span>
+
+<!-- Mobile Header -->
+<header class="nav-down responsive-nav hidden-lg hidden-md" role="banner">
+    <div class="logom" id="logom">
+        <a href="portfolio.html" aria-label="Go to Portfolio">
+            <h1 id="ranm">ARTLY AGENCY</h1>
+        </a>
+    </div>
+
+    <!-- IMPORTANT: no bootstrap collapse attributes (your CSS+JS drives overlay) -->
+    <button type="button" id="nav-toggle" class="navbar-toggle" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span id="bar1" class="icon-bar"></span>
+        <span id="bar2" class="icon-bar"></span>
+        <span id="bar3" class="icon-bar"></span>
+    </button>
+
+    <!-- Mobile Overlay Nav -->
+    <div id="main-nav" class="main-nav" role="navigation" aria-label="Mobile navigation">
+        <nav>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" class="inactive">HOME</a></li>
+                <li><a href="portfolio.html" class="inactive">PORTFOLIO</a></li>
+                <li><a href="business-brand-portfolio.html" class="inactive">BUSINESS &amp; BRANDS</a></li>
+                <li><a href="weddings-portfolio.html" class="inactive">WEDDINGS</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+
+                <li class="submenu">
+                    <a href="https://www.instagram.com/artly_agency/?hl=en" target="_blank" rel="noopener" style="font-size: 200%;" aria-label="Open Instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Desktop Sidebar -->
+<aside class="sidebar-navigation hidde-sm hidden-xs" role="navigation" aria-label="Sidebar navigation">
+    <div class="logo">
+        <a href="index.html" id="logod" class="logod" aria-label="Go to Home">
+            <h1 id="rand">ARTLY AGENCY</h1>
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="inactive">HOME</a></li>
+            <li class="port"><a href="portfolio.html" class="inactive">PORTFOLIO</a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <ul class="social-icons" aria-label="Social links">
+        <li>
+            <a href="https://www.instagram.com/artly_agency/?hl=en" target="_blank" rel="noopener" style="font-size: 200%;" aria-label="Open Instagram">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+</aside>
+
+<!-- Main Content -->
+<main role="main" aria-label="Contact page content">
+    <section class="contactmail" aria-label="Contact call to action">
+        <div>
+
+            <!-- Animated headline blocks (your CSS animates .lets/.make/.some/.magic/.together) -->
+            <div style="display:flex; justify-content:center; flex-wrap:wrap;">
+                <div><h2>PHOTOGRAPHY SAVES MEMORIES. <br> LET US SAVE YOURS</h2></div>
+
+            </div>
+
+            <!-- Mail CTA -->
+            <div class="contactgmail">
+                <a href="mailto:artlyagency@gmail.com" style="text-decoration:none;" aria-label="Send email to artlyagency@gmail.com">
+                    <h1>artlyagency@gmail.com</h1>
+                </a>
+
+                <!-- Small helper text without touching CSS (inherits your typography rules) -->
+                <p style="margin-top: 12px; opacity: 0.7; text-align:center;">
+                    Reply time: usually within 24–48 hours.
+                </p>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- Your site scripts -->
+<script src="js/min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    // Logo hover animation trigger (existing behavior)
+    setTimeout(function () {
+        $('#logod').toggleClass('logod logodl');
+        setTimeout(function () {
+            $('#logod').toggleClass('logod logodl');
+        }, 1750);
+    }, 1750);
+
+    // In-app browsers (Instagram/Facebook) stylesheet
+    if (/instagram|FB/i.test(navigator.userAgent)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'css/insta.css';
+        document.head.appendChild(link);
+    }
+
+    // Mobile menu toggle (same fix as your working page)
+    $('#nav-toggle').on('click', function (e) {
+        e.preventDefault();
+
+        $('#main-nav').toggleClass('is-open');
+        $(this).toggleClass('open');
+
+        var isOpen = $('#main-nav').hasClass('is-open');
+        $(this).attr('aria-expanded', isOpen ? 'true' : 'false');
+
+        // Optional: only matters if your CSS already uses menu-open
+        $('html, body').toggleClass('menu-open', isOpen);
+    });
+
+    // Close menu when clicking any nav link (mobile)
+    $('#main-nav a').on('click', function () {
+        $('#main-nav').removeClass('is-open');
+        $('#nav-toggle').removeClass('open').attr('aria-expanded', 'false');
+        $('html, body').removeClass('menu-open');
+    });
+
+    // Close menu on ESC (nice UX, no CSS change)
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') {
+            $('#main-nav').removeClass('is-open');
+            $('#nav-toggle').removeClass('open').attr('aria-expanded', 'false');
+            $('html, body').removeClass('menu-open');
+        }
+    });
+</script>
+
+</body>
+</html>
