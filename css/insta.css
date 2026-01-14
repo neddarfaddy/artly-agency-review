@@ -18,37 +18,7 @@
   transition: .7s;
 }
 
-#raniag {
-  font-size: 40px;
-  color: #FF69B4;
-}
 
-#ranougraphy {
-  font-size: 40px;
-  color: white;
-  opacity: 0;
-  transform: scale(0) translateY(50px);
-}
-
-#logoig:hover #raniag {
-  transform: scale(0) translateY(-50px);
-  opacity: 0
-}
-
-#logoig:hover #ranougraphy {
-  transform: scale(1) translateY(0px);
-  opacity: 1;
-}
-
-.logoigl #raniag {
-  transform: scale(0) translateY(-50px);
-  opacity: 0
-}
-
-.logoigl #ranougraphy {
-  transform: scale(1) translateY(0px);
-  opacity: 1;
-}
 
 .logom a {
   display: none;
